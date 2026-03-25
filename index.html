@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kt cloud TECH UP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; }
+        .scroll-anim { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .scroll-anim.show { opacity: 1; transform: translateY(0); }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        .purpose-radio:checked + label { background-color: rgba(239, 68, 68, 0.2); border-color: rgb(239, 68, 68); color: rgb(248, 113, 113); font-weight: bold; }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 antialiased selection:bg-red-900 selection:text-red-50">
+
+    <!-- Hero Section -->
+    <section class="pt-20 pb-20 lg:pt-32 lg:pb-32 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-950 -z-10"></div>
+        <div class="absolute top-0 right-0 -translate-y-12 translate-x-1/3 w-[800px] h-[800px] bg-red-900/20 rounded-full blur-3xl -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto">
+            <div class="max-w-4xl scroll-anim">
+                <h1 class="text-5xl md:text-7xl font-black leading-[1.4] mb-8 tracking-tight text-white">
+                    내일의 인재,<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-600">kt cloud TECH UP</span>에서<br>
+                    완성됩니다.
+                </h1>
+                <p class="text-xl text-gray-400 max-w-xl leading-loose mb-16">
+                    클라우드 산업을 선도하는 kt cloud와 함께<br>
+                    당신의 무한한 잠재력을 깨우고, 실무형 핵심 인재로 성장하세요.
+                </p>
+
+                <!-- WARM UP DAY Video -->
+                <div class="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border border-gray-800 w-full max-w-5xl bg-gray-900 mt-12">
+                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/bo9IgI0sPpE?autoplay=1&mute=1&loop=1&playlist=bo9IgI0sPpE&controls=0" title="WARM UP DAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: 테크업 프로그램 -->
+    <section class="py-24 bg-gray-900 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 scroll-anim">
+                <h2 class="text-4xl md:text-5xl font-bold leading-[1.4] mb-6 text-white">
+                    개발부터 제품 운영까지,<br>
+                    <span class="text-red-500">테크업 프로그램</span>
+                </h2>
+                <p class="text-2xl font-medium text-gray-200 leading-relaxed mt-4">
+                    현재 다양한 직무의 부트캠프가 모집 중입니다.<br>
+                    <span class="text-white font-bold underline decoration-red-500 decoration-4 underline-offset-4">관심 있는 과정을 클릭</span>하여 상세 커리큘럼과 지원 일정을 확인해 보세요!
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 1 -->
+                <a href="https://kt-cloud-tech-up-fullstack.vercel.app" target="_blank" rel="noopener noreferrer" class="relative group bg-gray-800/50 p-8 rounded-3xl shadow-lg border-2 border-gray-600 hover:bg-gray-800 hover:border-red-500 transition-all flex flex-col items-center text-center cursor-pointer scroll-anim">
+                    <div class="absolute top-4 left-4 bg-[#ff00ff]/20 text-[#ff00ff] border border-[#ff00ff]/50 text-sm font-bold px-4 py-1.5 rounded-full animate-pulse shadow-[0_0_10px_rgba(255,0,255,0.3)]">모집중</div>
+                    <div class="w-16 h-16 rounded-2xl bg-gray-900 flex items-center justify-center mb-6 mt-4 border border-gray-700/50 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">kt cloud 풀스택</h3>
+                </a>
+                <!-- 2 -->
+                <a href="https://kt-cloud-tech-up-frontend.vercel.app" target="_blank" rel="noopener noreferrer" class="relative group bg-gray-800/50 p-8 rounded-3xl shadow-lg border-2 border-gray-600 hover:bg-gray-800 hover:border-red-500 transition-all flex flex-col items-center text-center cursor-pointer scroll-anim delay-100">
+                    <div class="absolute top-4 left-4 bg-[#ff00ff]/20 text-[#ff00ff] border border-[#ff00ff]/50 text-sm font-bold px-4 py-1.5 rounded-full animate-pulse shadow-[0_0_10px_rgba(255,0,255,0.3)]">모집중</div>
+                    <div class="w-16 h-16 rounded-2xl bg-gray-900 flex items-center justify-center mb-6 mt-4 border border-gray-700/50 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">kt cloud 프론트엔드</h3>
+                </a>
+                <!-- 3 -->
+                <a href="https://kt-cloud-tech-up-backend.vercel.app" target="_blank" rel="noopener noreferrer" class="relative group bg-gray-800/50 p-8 rounded-3xl shadow-lg border-2 border-gray-600 hover:bg-gray-800 hover:border-red-500 transition-all flex flex-col items-center text-center cursor-pointer scroll-anim delay-200">
+                    <div class="absolute top-4 left-4 bg-[#ff00ff]/20 text-[#ff00ff] border border-[#ff00ff]/50 text-sm font-bold px-4 py-1.5 rounded-full animate-pulse shadow-[0_0_10px_rgba(255,0,255,0.3)]">모집중</div>
+                    <div class="w-16 h-16 rounded-2xl bg-gray-900 flex items-center justify-center mb-6 mt-4 border border-gray-700/50 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect><rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect><line x1="6" x2="6.01" y1="6" y2="6"></line><line x1="6" x2="6.01" y1="18" y2="18"></line></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">kt cloud 백엔드</h3>
+                </a>
+                <!-- 4 -->
+                <a href="https://kt-cloud-tech-up-ai.vercel.app/" target="_blank" rel="noopener noreferrer" class="relative group bg-gray-800/50 p-8 rounded-3xl shadow-lg border-2 border-gray-600 hover:bg-gray-800 hover:border-red-500 transition-all flex flex-col items-center text-center cursor-pointer scroll-anim">
+                    <div class="absolute top-4 left-4 bg-[#ff00ff]/20 text-[#ff00ff] border border-[#ff00ff]/50 text-sm font-bold px-4 py-1.5 rounded-full animate-pulse shadow-[0_0_10px_rgba(255,0,255,0.3)]">모집중</div>
+                    <div class="w-16 h-16 rounded-2xl bg-gray-900 flex items-center justify-center mb-6 mt-4 border border-gray-700/50 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path><path d="M5 3v4"></path><path d="M19 17v4"></path><path d="M3 5h4"></path><path d="M17 19h4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">kt cloud 생성형 AI</h3>
+                </a>
+                <!-- 5 -->
+                <a href="https://cybersecurity-ktcloud-techup-jw.vercel.app" target="_blank" rel="noopener noreferrer" class="relative group bg-gray-800/50 p-8 rounded-3xl shadow-lg border-2 border-gray-600 hover:bg-gray-800 hover:border-red-500 transition-all flex flex-col items-center text-center cursor-pointer scroll-anim delay-100">
+                    <div class="absolute top-4 left-4 bg-[#ff00ff]/20 text-[#ff00ff] border border-[#ff00ff]/50 text-sm font-bold px-4 py-1.5 rounded-full animate-pulse shadow-[0_0_10px_rgba(255,0,255,0.3)]">모집중</div>
+                    <div class="w-16 h-16 rounded-2xl bg-gray-900 flex items-center justify-center mb-6 mt-4 border border-gray-700/50 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2-1 4-2 7-2 2.5 0 4.5 1 6.5 2a1 1 0 0 1 1 1z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">kt cloud 사이버 보안</h3>
+                </a>
+                <!-- 6 -->
+                <a href="https://kt-cloud-tech-up-cloudinfra.vercel.app" target="_blank" rel="noopener noreferrer" class="relative group bg-gray-800/50 p-8 rounded-3xl shadow-lg border-2 border-gray-600 hover:bg-gray-800 hover:border-red-500 transition-all flex flex-col items-center text-center cursor-pointer scroll-anim delay-200">
+                    <div class="absolute top-4 left-4 bg-[#ff00ff]/20 text-[#ff00ff] border border-[#ff00ff]/50 text-sm font-bold px-4 py-1.5 rounded-full animate-pulse shadow-[0_0_10px_rgba(255,0,255,0.3)]">모집중</div>
+                    <div class="w-16 h-16 rounded-2xl bg-gray-900 flex items-center justify-center mb-6 mt-4 border border-gray-700/50 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">kt cloud 클라우드 인프라</h3>
+                </a>
+                <!-- 7 -->
+                <a href="https://kt-cloud-tech-up-cloud.vercel.app" target="_blank" rel="noopener noreferrer" class="relative group bg-gray-800/50 p-8 rounded-3xl shadow-lg border-2 border-gray-600 hover:bg-gray-800 hover:border-red-500 transition-all flex flex-col items-center text-center cursor-pointer scroll-anim">
+                    <div class="absolute top-4 left-4 bg-[#ff00ff]/20 text-[#ff00ff] border border-[#ff00ff]/50 text-sm font-bold px-4 py-1.5 rounded-full animate-pulse shadow-[0_0_10px_rgba(255,0,255,0.3)]">모집중</div>
+                    <div class="w-16 h-16 rounded-2xl bg-gray-900 flex items-center justify-center mb-6 mt-4 border border-gray-700/50 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2" ry="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M15 2v2"></path><path d="M15 20v2"></path><path d="M2 15h2"></path><path d="M2 9h2"></path><path d="M20 15h2"></path><path d="M20 9h2"></path><path d="M9 2v2"></path><path d="M9 20v2"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">kt cloud 클라우드 네이티브</h3>
+                </a>
+                <!-- 8 -->
+                <a href="https://kt-cloud-tech-up-product-design.vercel.app" target="_blank" rel="noopener noreferrer" class="relative group bg-gray-800/50 p-8 rounded-3xl shadow-lg border-2 border-gray-600 hover:bg-gray-800 hover:border-red-500 transition-all flex flex-col items-center text-center cursor-pointer scroll-anim delay-100">
+                    <div class="absolute top-4 left-4 bg-[#ff00ff]/20 text-[#ff00ff] border border-[#ff00ff]/50 text-sm font-bold px-4 py-1.5 rounded-full animate-pulse shadow-[0_0_10px_rgba(255,0,255,0.3)]">모집중</div>
+                    <div class="w-16 h-16 rounded-2xl bg-gray-900 flex items-center justify-center mb-6 mt-4 border border-gray-700/50 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19 7-7 3 3-7 7-3-3z"></path><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="m2 2 7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">kt cloud 프로덕트 디자인</h3>
+                </a>
+                <!-- 9 -->
+                <a href="https://kt-cloud-tech-up.vercel.app" target="_blank" rel="noopener noreferrer" class="relative group bg-gray-800/50 p-8 rounded-3xl shadow-lg border-2 border-gray-600 hover:bg-gray-800 hover:border-red-500 transition-all flex flex-col items-center text-center cursor-pointer scroll-anim delay-200">
+                    <div class="absolute top-4 left-4 bg-[#ff00ff]/20 text-[#ff00ff] border border-[#ff00ff]/50 text-sm font-bold px-4 py-1.5 rounded-full animate-pulse shadow-[0_0_10px_rgba(255,0,255,0.3)]">모집중</div>
+                    <div class="w-16 h-16 rounded-2xl bg-gray-900 flex items-center justify-center mb-6 mt-4 border border-gray-700/50 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">kt cloud 프로덕트 매니지먼트</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: 맞춤형 커리어 지원 -->
+    <section class="py-24 bg-gray-950 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 scroll-anim">
+                <h2 class="text-4xl md:text-5xl font-bold leading-[1.4] mb-6 text-white">
+                    목표를 현실로 만드는<br>
+                    <span class="text-red-500">맞춤형 커리어 지원</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 1 -->
+                <div class="bg-gray-900 p-8 rounded-3xl shadow-sm border border-gray-800 hover:border-red-500/30 transition-all flex flex-col items-start text-left group scroll-anim">
+                    <div class="w-14 h-14 rounded-2xl bg-gray-950 flex items-center justify-center mb-6 border border-gray-800 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#ccff00] mb-4">우수 수료생 채용 지원 시 우대</h3>
+                    <p class="text-gray-400 leading-relaxed">탁월한 성과를 인정받은 우수 수료생은 kt cloud 채용 과정에서 우대 혜택을 받아 취업 경쟁력을 높일 수 있습니다.</p>
+                </div>
+                <!-- 2 -->
+                <div class="bg-gray-900 p-8 rounded-3xl shadow-sm border border-gray-800 hover:border-red-500/30 transition-all flex flex-col items-start text-left group scroll-anim delay-100">
+                    <div class="w-14 h-14 rounded-2xl bg-gray-950 flex items-center justify-center mb-6 border border-gray-800 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">kt cloud 현직자 멘토링</h3>
+                    <p class="text-gray-400 leading-relaxed">현직 전문가와의 1:1 혹은 그룹 멘토링을 통해 실무 경험과 진로 방향에 대한 깊이 있는 인사이트를 얻습니다.</p>
+                </div>
+                <!-- 3 -->
+                <div class="bg-gray-900 p-8 rounded-3xl shadow-sm border border-gray-800 hover:border-red-500/30 transition-all flex flex-col items-start text-left group scroll-anim delay-200">
+                    <div class="w-14 h-14 rounded-2xl bg-gray-950 flex items-center justify-center mb-6 border border-gray-800 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" x2="20" y1="19" y2="19"></line></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">TECH UP 연합 해커톤</h3>
+                    <p class="text-gray-400 leading-relaxed">TECH UP의 훈련생들이 모여 아이디어를 구체화하고 팀워크로 완성하며 실전 같은 프로젝트 경험을 쌓는 대규모 해커톤입니다.</p>
+                </div>
+                <!-- 4 -->
+                <div class="bg-gray-900 p-8 rounded-3xl shadow-sm border border-gray-800 hover:border-red-500/30 transition-all flex flex-col items-start text-left group scroll-anim">
+                    <div class="w-14 h-14 rounded-2xl bg-gray-950 flex items-center justify-center mb-6 border border-gray-800 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">kt cloud 현직자 특강</h3>
+                    <p class="text-gray-400 leading-relaxed">업계 전문가들이 직접 전하는 생생한 현장 사례와 노하우를 통해 최신 기술 동향과 직무 역량을 배울 수 있습니다.</p>
+                </div>
+                <!-- 5 -->
+                <div class="bg-gray-900 p-8 rounded-3xl shadow-sm border border-gray-800 hover:border-red-500/30 transition-all flex flex-col items-start text-left group scroll-anim delay-100">
+                    <div class="w-14 h-14 rounded-2xl bg-gray-950 flex items-center justify-center mb-6 border border-gray-800 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">kt cloud 현직자 코드리뷰</h3>
+                    <p class="text-gray-400 leading-relaxed">현업 개발자에게 코드 품질과 구조에 대한 피드백을 받아 실무 수준의 개발 역량을 빠르게 성장시킬 수 있습니다.</p>
+                </div>
+                <!-- 6 -->
+                <div class="bg-gray-900 p-8 rounded-3xl shadow-sm border border-gray-800 hover:border-red-500/30 transition-all flex flex-col items-start text-left group scroll-anim delay-200">
+                    <div class="w-14 h-14 rounded-2xl bg-gray-950 flex items-center justify-center mb-6 border border-gray-800 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">이력서, 포트폴리오 컨설팅</h3>
+                    <p class="text-gray-400 leading-relaxed">체계적인 피드백을 통해 직무에 맞는 이력서와 포트폴리오를 완성도 있게 준비할 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: 성장을 이끄는 혜택 -->
+    <section class="py-24 bg-gray-900 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 scroll-anim">
+                <h2 class="text-4xl md:text-5xl font-bold leading-[1.4] mb-6 text-white">
+                    학습을 돕는 지원부터<br>
+                    <span class="text-red-500">성장을 이끄는 혜택까지</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 1 -->
+                <div class="bg-gray-800/50 p-8 rounded-3xl shadow-sm border border-gray-700/50 hover:bg-gray-800 hover:border-red-500/30 transition-all flex flex-col items-start text-left group scroll-anim">
+                    <div class="w-14 h-14 rounded-2xl bg-gray-900 flex items-center justify-center mb-6 border border-gray-700/50 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01"></path><path d="M16 6h.01"></path><path d="M12 6h.01"></path><path d="M12 10h.01"></path><path d="M12 14h.01"></path><path d="M16 10h.01"></path><path d="M16 14h.01"></path><path d="M8 10h.01"></path><path d="M8 14h.01"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">오프라인 교육장</h3>
+                    <p class="text-gray-400 leading-relaxed">오프라인 협업으로 몰입도 200% 실전 같은 팀 프로젝트가 펼쳐집니다.</p>
+                </div>
+                <!-- 2 -->
+                <div class="bg-gray-800/50 p-8 rounded-3xl shadow-sm border border-gray-700/50 hover:bg-gray-800 hover:border-red-500/30 transition-all flex flex-col items-start text-left group scroll-anim delay-100">
+                    <div class="w-14 h-14 rounded-2xl bg-gray-900 flex items-center justify-center mb-6 border border-gray-700/50 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">메타버스 교육장</h3>
+                    <p class="text-gray-400 leading-relaxed">현실을 뛰어넘는 메타버스 기반 몰입형 학습 경험을 제공합니다.</p>
+                </div>
+                <!-- 3 -->
+                <div class="bg-gray-800/50 p-8 rounded-3xl shadow-sm border border-gray-700/50 hover:bg-gray-800 hover:border-red-500/30 transition-all flex flex-col items-start text-left group scroll-anim delay-200">
+                    <div class="w-14 h-14 rounded-2xl bg-gray-900 flex items-center justify-center mb-6 border border-gray-700/50 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v2"></path><path d="M14 2v2"></path><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"></path><path d="M6 2v2"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">네트워킹 파티</h3>
+                    <p class="text-gray-400 leading-relaxed">혼자가 아닌 연결의 힘으로 성장의 속도를 높이세요.</p>
+                </div>
+                <!-- 4 -->
+                <div class="bg-gray-800/50 p-8 rounded-3xl shadow-sm border border-gray-700/50 hover:bg-gray-800 hover:border-red-500/30 transition-all flex flex-col items-start text-left group scroll-anim">
+                    <div class="w-14 h-14 rounded-2xl bg-gray-900 flex items-center justify-center mb-6 border border-gray-700/50 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">프로젝트 맞춤형 실습 인프라 지원</h3>
+                    <p class="text-gray-400 leading-relaxed">클라우드 실습 및 과제 수행에 필요한 최적의 구동 환경과 리소스를 제공합니다.</p>
+                </div>
+                <!-- 5 -->
+                <div class="bg-gray-800/50 p-8 rounded-3xl shadow-sm border border-gray-700/50 hover:bg-gray-800 hover:border-red-500/30 transition-all flex flex-col items-start text-left group scroll-anim delay-100">
+                    <div class="w-14 h-14 rounded-2xl bg-gray-900 flex items-center justify-center mb-6 border border-gray-700/50 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">생성형 AI 도구 지원</h3>
+                    <p class="text-gray-400 leading-relaxed">AI와 함께라면 학습이 더 빠르고 똑똑해집니다.</p>
+                </div>
+                <!-- 6 -->
+                <div class="bg-gray-800/50 p-8 rounded-3xl shadow-sm border border-gray-700/50 hover:bg-gray-800 hover:border-red-500/30 transition-all flex flex-col items-start text-left group scroll-anim delay-200">
+                    <div class="w-14 h-14 rounded-2xl bg-gray-900 flex items-center justify-center mb-6 border border-gray-700/50 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">인프런 강의 및 전문 도서 지원</h3>
+                    <p class="text-gray-400 leading-relaxed">1개월 간 인프런 강의를 무제한으로 수강하실 수 있으며, 성장을 위한 전문 서적을 지원합니다.</p>
+                </div>
+                <!-- 7 -->
+                <div class="bg-gray-800/50 p-8 rounded-3xl shadow-sm border border-gray-700/50 hover:bg-gray-800 hover:border-red-500/30 transition-all flex flex-col items-start text-left group scroll-anim">
+                    <div class="w-14 h-14 rounded-2xl bg-gray-900 flex items-center justify-center mb-6 border border-gray-700/50 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M12 11h4"></path><path d="M12 16h4"></path><path d="M8 11h.01"></path><path d="M8 16h.01"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">직군별 실전 역량 테스트 지원</h3>
+                    <p class="text-gray-400 leading-relaxed">각 직군별 맞춤형 모의 테스트(코딩 테스트, 실무 과제 등)를 통해 실력을 검증하고 한 단계 도약하세요. (※ 개발 직군은 모의 코딩 테스트 지원)</p>
+                </div>
+                <!-- 8 -->
+                <div class="bg-gray-800/50 p-8 rounded-3xl shadow-sm border border-gray-700/50 hover:bg-gray-800 hover:border-red-500/30 transition-all flex flex-col items-start text-left group scroll-anim delay-100">
+                    <div class="w-14 h-14 rounded-2xl bg-gray-900 flex items-center justify-center mb-6 border border-gray-700/50 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"></circle><path d="M18.09 10.37A6 6 0 1 1 10.34 18"></path><path d="M7 6h1v4"></path><path d="m16.71 13.88.7.71-2.82 2.82"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">훈련 장려금 제공</h3>
+                    <p class="text-gray-400 leading-relaxed">성장의 밑거름으로 월 최대 300,000원의 훈련장려금이 지급됩니다.</p>
+                </div>
+                <!-- 9 -->
+                <div class="bg-gray-800/50 p-8 rounded-3xl shadow-sm border border-gray-700/50 hover:bg-gray-800 hover:border-red-500/30 transition-all flex flex-col items-start text-left group scroll-anim delay-200">
+                    <div class="w-14 h-14 rounded-2xl bg-gray-900 flex items-center justify-center mb-6 border border-gray-700/50 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#ccff00] mb-4">고성능 실무용 노트북 대여</h3>
+                    <p class="text-gray-400 leading-relaxed">기기 성능 걱정 없이 교육에만 몰입할 수 있도록, 프로젝트 수행에 최적화된 고사양 노트북 대여 서비스를 제공합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: 비전 (Combined) -->
+    <section class="py-24 bg-gray-950 px-6 relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-red-900/10 rounded-full blur-3xl -z-10"></div>
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-gray-900 rounded-3xl overflow-hidden shadow-2xl border border-gray-800 flex flex-col scroll-anim">
+                    <div class="aspect-video relative">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop" alt="Technology" class="w-full h-full object-cover opacity-70">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                    </div>
+                    <div class="p-10 flex-1 flex flex-col justify-start">
+                        <div class="inline-block px-4 py-2 rounded-full bg-gray-800 text-gray-300 font-bold text-sm mb-6 border border-gray-700 w-fit">
+                            혁신의 시작
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold leading-[1.4] mb-4 text-white">
+                            기술로 세상을<br>바꾸는 힘
+                        </h2>
+                        <p class="text-lg text-gray-400 leading-loose">
+                            kt cloud는 산업 혁신을 이끌며<br>
+                            최고의 기술과 함께 성장해왔습니다.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-gray-900 rounded-3xl overflow-hidden shadow-2xl border border-gray-800 flex flex-col scroll-anim delay-200">
+                    <div class="aspect-video relative">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop" alt="People" class="w-full h-full object-cover opacity-70">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                    </div>
+                    <div class="p-10 flex-1 flex flex-col justify-start">
+                        <div class="inline-block px-4 py-2 rounded-full bg-gray-800 text-red-500 font-bold text-sm mb-6 border border-gray-700 w-fit">
+                            세상을 키우는 약속
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold leading-[1.4] mb-4 text-white">
+                            인재 중심의<br>기술 가치
+                        </h2>
+                        <p class="text-lg text-gray-400 leading-loose">
+                            최고의 인재가 세상을 성장시킬 때까지,<br>
+                            kt cloud의 노력은 계속될 것입니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: 지원하기 Form -->
+    <section class="py-24 bg-gray-900 px-6">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-12 scroll-anim">
+                <h2 class="text-4xl md:text-5xl font-bold leading-[1.4] text-white">
+                    <span class="text-red-500">kt cloud TECH UP</span> 과정 지원하기
+                </h2>
+            </div>
+            
+            <form action="https://formspree.io/f/xnjgdkgb" method="POST" class="space-y-8 bg-gray-950 p-8 md:p-12 rounded-3xl border border-gray-800 shadow-2xl scroll-anim delay-100">
+                <!-- 이름 -->
+                <div>
+                    <label class="block text-sm font-bold text-gray-300 mb-2">이름</label>
+                    <input type="text" name="name" required placeholder="예: 홍길동" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-colors placeholder:text-gray-600">
+                </div>
+                
+                <!-- 생년 -->
+                <div>
+                    <label class="block text-sm font-bold text-gray-300 mb-2">생년</label>
+                    <input type="text" name="birthYear" required placeholder="예: 97년생" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-colors placeholder:text-gray-600">
+                </div>
+                
+                <!-- 연락처 -->
+                <div>
+                    <label class="block text-sm font-bold text-gray-300 mb-2">연락처</label>
+                    <input type="tel" name="phone" required placeholder="예: 010-0000-0000" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-colors placeholder:text-gray-600">
+                </div>
+                
+                <!-- 교육목적 -->
+                <div>
+                    <label class="block text-sm font-bold text-gray-300 mb-3">교육목적</label>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <input type="radio" name="purpose" id="purpose-1" value="취업/이직" class="hidden purpose-radio" required>
+                        <label for="purpose-1" class="cursor-pointer text-center px-4 py-3 rounded-xl border bg-gray-900 border-gray-800 text-gray-400 hover:border-gray-600 transition-all">취업/이직</label>
+                        
+                        <input type="radio" name="purpose" id="purpose-2" value="자기개발" class="hidden purpose-radio">
+                        <label for="purpose-2" class="cursor-pointer text-center px-4 py-3 rounded-xl border bg-gray-900 border-gray-800 text-gray-400 hover:border-gray-600 transition-all">자기개발</label>
+                        
+                        <input type="radio" name="purpose" id="purpose-3" value="창업" class="hidden purpose-radio">
+                        <label for="purpose-3" class="cursor-pointer text-center px-4 py-3 rounded-xl border bg-gray-900 border-gray-800 text-gray-400 hover:border-gray-600 transition-all">창업</label>
+                        
+                        <input type="radio" name="purpose" id="purpose-4" value="기타" class="hidden purpose-radio">
+                        <label for="purpose-4" class="cursor-pointer text-center px-4 py-3 rounded-xl border bg-gray-900 border-gray-800 text-gray-400 hover:border-gray-600 transition-all">기타</label>
+                    </div>
+                </div>
+                
+                <!-- 지원과정 -->
+                <div>
+                    <label class="block text-sm font-bold text-gray-300 mb-2">지원과정</label>
+                    <div class="relative">
+                        <select name="course" required class="w-full bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-colors appearance-none cursor-pointer">
+                            <option value="" disabled selected>과정을 선택해주세요</option>
+                            <option value="kt cloud 풀스택">kt cloud 풀스택</option>
+                            <option value="kt cloud 프론트엔드">kt cloud 프론트엔드</option>
+                            <option value="kt cloud 백엔드">kt cloud 백엔드</option>
+                            <option value="kt cloud 생성형 AI">kt cloud 생성형 AI</option>
+                            <option value="kt cloud 사이버 보안">kt cloud 사이버 보안</option>
+                            <option value="kt cloud 클라우드 인프라">kt cloud 클라우드 인프라</option>
+                            <option value="kt cloud 클라우드 네이티브">kt cloud 클라우드 네이티브</option>
+                            <option value="kt cloud 프로덕트 디자인">kt cloud 프로덕트 디자인</option>
+                            <option value="kt cloud 프로덕트 매니지먼트">kt cloud 프로덕트 매니지먼트</option>
+                        </select>
+                        <div class="absolute inset-y-0 right-4 flex items-center pointer-events-none">
+                            <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 개인정보 동의 -->
+                <div class="pt-6 border-t border-gray-800">
+                    <div class="flex items-center justify-between mb-2">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <div class="relative flex items-center justify-center">
+                                <input type="checkbox" name="privacyConsent" required class="peer appearance-none w-5 h-5 rounded border border-gray-600 checked:bg-red-500 checked:border-red-500 bg-gray-900 transition-colors cursor-pointer">
+                                <svg class="absolute w-3 h-3 text-white opacity-0 peer-checked:opacity-100 pointer-events-none" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <span class="text-gray-300 text-sm font-medium group-hover:text-white transition-colors">개인정보 수집 및 이용에 동의합니다. <span class="text-red-500">(필수)</span></span>
+                        </label>
+                        <button type="button" onclick="document.getElementById('privacy-details').classList.toggle('hidden')" class="text-xs text-gray-500 hover:text-gray-300 underline underline-offset-2 transition-colors">
+                            자세히 보기
+                        </button>
+                    </div>
+                    <!-- 자세히 보기 내용 (기본 숨김) -->
+                    <div id="privacy-details" class="hidden mt-4 p-5 bg-gray-900 rounded-xl text-xs text-gray-400 leading-relaxed border border-gray-800 transition-all">
+                        kt cloud TECH UP 실시간온라인문의 신청을 위해 다음과 같이 개인정보 수집 및 이용합니다.<br><br>
+                        - 수집목적 : 온라인문의<br>
+                        - 수집항목 : 이름, 생년, 연락처, 교육목적, 문의내용<br>
+                        - 보유기간 : 60일
+                    </div>
+                </div>
+                
+                <!-- Submit Button -->
+                <button type="submit" class="w-full py-4 bg-red-600 hover:bg-red-500 text-white font-bold rounded-xl transition-all mt-8 flex justify-center items-center gap-2 shadow-lg shadow-red-900/20">
+                    지원서 접수하기
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-500 py-12 px-6 border-t border-gray-900">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+            <div class="flex flex-col gap-3">
+                <a href="https://vivid-thyme-ac6.notion.site/kt-cloud-TECH-UP-2479e3e335cc80dbb7fae14d3c6040d4" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white font-bold transition-colors text-base">
+                    개인정보처리방침
+                </a>
+                <p class="flex items-center gap-2">
+                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    상담전화 ㅣ 1533-6176
+                </p>
+                <p>TECH UP은 kt cloud가 만든 디지털 실무 인재 육성 프로그램 입니다.</p>
+            </div>
+            <div class="flex flex-col items-start md:items-end gap-4">
+                <p>Copyright© 2025 kt cloud corp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 스크롤 애니메이션 스크립트 -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else {
+                        entry.target.classList.remove('show');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.scroll-anim').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
